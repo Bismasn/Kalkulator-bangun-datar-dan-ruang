@@ -936,21 +936,23 @@ int main(int argc, char** argv) {
                                 } else {
                                     antilooping();
                                 }
-                            }else if (pilihan == 4) {
-                                cout << "Kamu memilih hitung semua luas kerucut";
-                                cout << "Masukkan Angka jari lingkaran kerucut : ";
-                                cin >> jari;
-                                cout << "Masukan Angka tinggi kerucut : ";
-                                cin >> tinggi;
-                                cout << endl;
-                                cout << "========================================================" << endl;
-                                cout << WARNA_CYAN << "Luas permukaan kerucut : " << kerucut[0].luasPermukaanKerucut(jari, tinggi)<< " cm" << endl;
-                                cout <<  "Luas selimut kerucut : " << kerucut[0].selimutKerucut(jari, tinggi) << " cm" << endl;
-                                cout << "Luas alas kerucut : " << kerucut[0].luasAlasKerucut(jari) << " cm" << endl;
-                                cout << WARNA_KUNING << "========================================================" << endl;
-                            }else{
+                            }else {
                                 antilooping();
                             }
+                        }else if (pilihan == 4) {
+                            cout << "Kamu memilih hitung semua luas kerucut" <<endl;
+                            cout << "Masukkan Angka jari lingkaran kerucut : ";
+                            cin >> jari;
+                            cout << "Masukan Angka tinggi kerucut : ";
+                            cin >> tinggi;
+                            cout << endl;
+                            cout << "========================================================" << endl;
+                            cout << WARNA_CYAN << "Luas permukaan kerucut : " << kerucut[0].luasPermukaanKerucut(jari, tinggi)<< " cm" << endl;
+                            cout <<  "Luas selimut kerucut : " << kerucut[0].selimutKerucut(jari, tinggi) << " cm" << endl;
+                            cout << "Luas alas kerucut : " << kerucut[0].luasAlasKerucut(jari) << " cm" << endl;
+                            cout << WARNA_KUNING << "========================================================" << endl;
+                        }else{
+                            antilooping();
                         }
                     } else if (pilihan == 2) {
                         cout << "Kamu memilih menghitung volume bangun ruang kerucut" << endl;
